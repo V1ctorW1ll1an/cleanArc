@@ -1,11 +1,15 @@
 {
-    "name": "app",
-    "version": "1.0.0",
-    "description": "Learn clean architecture",
-    "main": "index.js",
-    "repository": "git@github.com:V1ctorW1ll1an/cleanArch.git",
-    "author": "Victor Willian",
-    "devDependencies": {
-        "typescript": "^4.8.2"
-    }
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Learn clean architecture",
+  "main": "index.js",
+  "repository": "git@github.com:V1ctorW1ll1an/cleanArch.git",
+  "author": "Victor Willian",
+  "devDependencies": {
+    "jest": "^29.0.1",
+    "typescript": "^4.8.2"
+  },
+  "scripts": {
+    "test": "jest"
+  }
 }
