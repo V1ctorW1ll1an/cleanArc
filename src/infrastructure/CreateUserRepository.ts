@@ -1,4 +1,4 @@
-import { UserEntity } from "../domain/entities/UserEntity"
+import { UserEntity } from "../entities/UserEntity"
 
 interface ICreateUserRepository {
     createUser(user: UserEntity): Promise<UserEntity>

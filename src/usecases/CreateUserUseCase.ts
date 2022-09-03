@@ -1,5 +1,5 @@
-import { UserEntity } from "../../domain/entities/UserEntity"
-import { ICreateUserRepository } from "../../infra/CreateUserRepository"
+import { UserEntity } from "@entities"
+import { ICreateUserRepository } from "../infrastructure/CreateUserRepository"
 
 interface IUserInputProps {
     name: string
@@ -17,11 +17,7 @@ interface IUserOutputProps {
 class CreateUserUseCase {
     constructor(private readonly createUserRepository: ICreateUserRepository) {}
     async execute(user: IUserInputProps): Promise<IUserOutputProps> {
-        const userEntity = new UserEntity({
-            name: user.name,
-            email: user.email,
-            password: user.password,
-        })
+        const userEntity = UserEntity.create(user)
         const userRegistered = await this.createUserRepository.createUser(
             userEntity
         )

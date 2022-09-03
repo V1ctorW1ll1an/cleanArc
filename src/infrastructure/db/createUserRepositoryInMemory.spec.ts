@@ -1,4 +1,4 @@
-import { UserEntity } from "../../domain/entities/UserEntity"
+import { UserEntity } from "../../entities/UserEntity"
 import { CreateUserRepositoryInMemory } from "./CreateUserRepositoryInMemory"
 
 describe("CreateUserRepositoryInMemory", () => {

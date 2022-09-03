@@ -1,5 +1,5 @@
 import express, { Express, Request, Response } from "express"
-import { CreateUserUseCase } from "../../../applications/usecases/CreateUserUseCase"
+import { CreateUserUseCase } from "../../../usecases/CreateUserUseCase"
 import { CreateUserRepositoryInMemory } from "../../db/CreateUserRepositoryInMemory"
 
 const app: Express = express()
