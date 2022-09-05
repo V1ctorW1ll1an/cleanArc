@@ -31,7 +31,7 @@
         "paths": {
             "@infrastructure/*": ["infrastructure/*"],
             "@adapters/*": ["adapters/*"],
-            "@entities": ["entities/index"],
+            "@entities/*": ["entities/*"],
             "@useCases/*": ["useCases/*"]
         } /* Specify a set of entries that re-map imports to additional lookup locations. */,
         // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
