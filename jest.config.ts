@@ -126,6 +126,17 @@ export default {
     //   "<rootDir>"
     // ],
 
+    roots: ["<rootDir>/src"],
+    transform: {
+        "^.+\\.tsx?$": "ts-jest",
+    },
+    moduleNameMapper: {
+        "@infrastructure/(.*)": "<rootDir>/src/infrastructure/$1",
+        "@adapters/(.*)": "<rootDir>/src/adapters/$1",
+        "@entities/(.*)": "<rootDir>/src/entities/$1",
+        "@useCases/(.*)": "<rootDir>/src/useCases/$1",
+    },
+
     // Allows you to use a custom runner instead of Jest's default test runner
     // runner: "jest-runner",
 
@@ -166,9 +177,6 @@ export default {
 
     // This option allows use of a custom test runner
     // testRunner: "jest-circus/runner",
-
-    // A map from regular expressions to paths to transformers
-    transform: { "^.+\\.ts?$": "ts-jest" },
 
     // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
     // transformIgnorePatterns: [
