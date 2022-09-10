@@ -102,7 +102,7 @@ export class UserEntity {
     }
 
     private constructor(props: IUserEntityProps) {
-        this._id = props.id
+        this._id = props.id ? props.id : crypto.randomUUID()
         this._name = props.name
         this._email = props.email
         this._password = props.password

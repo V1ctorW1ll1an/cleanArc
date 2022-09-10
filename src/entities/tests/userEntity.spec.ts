@@ -119,4 +119,17 @@ describe("UserEntity", () => {
 
         expect(user.password.comparePassword("12345")).toBe(true)
     })
+
+    it("Should create an id when it was not informed", () => {
+        const userProps: IUserEntityProps = {
+            id: "",
+            name: "john doe",
+            email: Email.create("johndoe@gmail.com"),
+            password: Password.create({ password: "12345", salt: "" }),
+        }
+
+        const user = UserEntity.create(userProps)
+
+        expect(user.id).not.toBe("")
+    })
 })
