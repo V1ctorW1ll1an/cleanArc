@@ -27,7 +27,7 @@ export class Email {
 
 export interface IPasswordProps {
     password: string
-    salt: string
+    salt?: string
 }
 
 export class Password {
@@ -73,7 +73,7 @@ export class Password {
 }
 
 export interface IUserEntityProps {
-    id: string
+    id?: string
     name: string
     email: Email
     password: Password

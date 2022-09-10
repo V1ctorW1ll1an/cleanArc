@@ -132,7 +132,7 @@ export default {
     },
     moduleNameMapper: {
         "@infrastructure/(.*)": "<rootDir>/src/infrastructure/$1",
-        "@adapters/(.*)": "<rootDir>/src/adapters/$1",
+        "@gateways/(.*)": "<rootDir>/src/gateways/$1",
         "@entities/(.*)": "<rootDir>/src/entities/$1",
         "@useCases/(.*)": "<rootDir>/src/useCases/$1",
     },

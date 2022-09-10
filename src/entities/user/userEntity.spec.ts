@@ -1,6 +1,6 @@
 // test user entity
 
-import { UserEntity, IUserEntityProps, Email, Password } from "../UserEntity"
+import { UserEntity, IUserEntityProps, Email, Password } from "./UserEntity"
 
 describe("UserEntity", () => {
     it("should throw error without email", () => {
